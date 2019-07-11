@@ -82,7 +82,7 @@ export default class InputToolbar extends React.Component {
 
   render() {
     return (
-      <View style={[styles.container, this.props.containerStyle, { position: this.state.position, height: this.props.composerHeight }]}>
+      <View style={[styles.container, { position: this.state.position, height: this.props.composerHeight }, this.props.containerStyle]}>
         <View style={[styles.primary, this.props.primaryStyle]}>
           {this.renderActions()}
           {this.renderComposer()}
